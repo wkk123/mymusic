@@ -645,8 +645,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   flex-grow: 5;
   position: relative;
   border-radius: 0.05rem;
@@ -655,12 +653,12 @@
   background: #ff286b;
   height: 0.1rem;
   border-radius: 0.05rem;
-  width: 0%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  position: relative;
+  left: 0;
 }
 .Single .Single_bar .bar_progress .bar_power .bar_touch {
   background: #fff;
@@ -818,24 +816,34 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  background: #008000;
 }
 .Single .Single_nav .Nav_min .item_box .img_box {
   width: 0.6rem;
   height: 0.6rem;
-  background-color: #f00;
+  box-sizing: border-box;
 }
 .Single .Single_nav .Nav_min .item_box:nth-child(1) .img_box {
-  background: #00f;
+  background-image: url("./../../images/icon/5.png");
+  background-position: 2px -94px;
+  background-repeat: no-repeat;
+}
+.Single .Single_nav .Nav_min .item_box:nth-child(1) .img_box.active {
+  background-position: 0 0;
 }
 .Single .Single_nav .Nav_min .item_box:nth-child(2) .img_box {
-  background: #00f;
+  background-image: url("./../../images/icon/5.png");
+  background-position: 3px -117px;
+  background-repeat: no-repeat;
 }
 .Single .Single_nav .Nav_min .item_box:nth-child(3) .img_box {
-  background: #00f;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  border-top-right-radius: 1px;
 }
 .Single .Single_nav .Nav_min .item_box:nth-child(4) .img_box {
-  background: #00f;
+  background-image: url("./../../images/icon/5.png");
+  background-repeat: no-repeat;
+  background-position: 1px -430px;
 }
 .Single .Single_nav .Nav_min .item_box:nth-child(4) .msg_box {
   width: calc(1.4rem);

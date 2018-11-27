@@ -511,8 +511,6 @@ $f36 = 0.36rem
       display flex
       flex-direction row
       flex-wrap wrap
-      justify-content center
-      align-items center
       flex-grow: 5
       position relative
       border-radius 0.05rem
@@ -520,12 +518,12 @@ $f36 = 0.36rem
         background $theme
         height 0.10rem
         border-radius 0.05rem
-        width 0%
         display flex
         flex-direction row
         flex-wrap wrap
-        justify-content center
         align-items center
+        position relative
+        left 0
         .bar_touch
           background $cfff
           width 0.3rem
@@ -647,22 +645,31 @@ $f36 = 0.36rem
         justify-content center
         align-items: center
         flex-grow: 1
-        background green
         .img_box
           rectangle(0.6rem,0.6rem)
-          background-color red
+          box-sizing: border-box
         &:nth-child(1)
           .img_box
-            background blue
+            background-image: url('./../../images/icon/5.png')
+            background-position 2px -94px
+            background-repeat: no-repeat
+            &.active
+              background-position: 0 0
         &:nth-child(2)
           .img_box
-            background blue
+            background-image: url('./../../images/icon/5.png')
+            background-position 3px -117px
+            background-repeat: no-repeat
         &:nth-child(3)
           .img_box
-            background blue
+            border 2px solid $cfff
+            border-radius: 5px
+            border-top-right-radius: 1px
         &:nth-child(4)
           .img_box
-            background blue
+            background-image: url('./../../images/icon/5.png')
+            background-repeat: no-repeat
+            background-position: 1px -430px
           .msg_box
             rectangle(calc(1.4rem),100%)
             display flex

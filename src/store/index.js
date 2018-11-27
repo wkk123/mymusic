@@ -23,7 +23,7 @@ export default new Vuex.Store({
             state.songlistInfo = data.songlistInfo;
         },
         setPlayList(state, playList) {
-            // console.log('1', state, playList);
+            console.log('1', state, playList);
             state.index = playList.index;
             if (playList.songlist[playList.index].data) {
                 state.playList.push({

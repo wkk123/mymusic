@@ -62,7 +62,7 @@
     <div class="PopMusic_list" v-if="isNavFlag!==2">
       <ul class="PopMusic_songlist">
         <!-- <router-link v-for="(item,index) in songlist" :to="{name:'Single',query:{id:item.data.singer[0].id}}" v-bind:key="item.cur_count"  @click="plays(item,index)" :class="{active:isSongFlag === index}"> -->
-          <li class="songlist_item" v-for="(item,index) in songlist" @click="plays(item,index)" v-bind:key="item.cur_count" :class="{active:isSongFlag === index}">
+          <li class="songlist_item" v-for="(item,index) in songlist" @click="plays(item,index)" v-bind:key="item.data.songid" :class="{active:isSongFlag === index}">
           <!-- <li class="songlist_item"> -->
             <div class="item_info" >
               <div class="item_flag" :class="{active:isSongFlag === index}"></div>
