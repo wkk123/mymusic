@@ -12,9 +12,12 @@ import store from './store/index'
 //引入静态组件
 require('./assets/css/base/reset.css')
 require('./assets/css/base/variable.css')
+require('./assets/css/base/public.css')
 require('./assets/css/main/style.css')
 
-
+import wcSwiper from 'wc-swiper'
+import 'wc-swiper/style.css'
+Vue.use(wcSwiper);
 
 //引入组件
 Vue.prototype.$axios = axios

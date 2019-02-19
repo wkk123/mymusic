@@ -27,6 +27,10 @@
       return {
 
       }
+    },
+    watch:{
+      $route(){
+      }
     }
   }
 </script>

@@ -4,7 +4,8 @@
       <li class="head_btn">
         <i class="icon" :class="leftBtn()" @click="leftBtnEvent"></i>
       </li>
-      <li class="head_text" id="head_text">{{title}}</li>
+      <li class="head_text 1" v-show="title">{{title}}</li>
+      <li class="head_text 2" id="head_text" v-show="!title">{{title}}</li>
       <li class="head_btn">
         <i class="icon" :class="rightBtn()" @click="rightBtnEvent"></i>
       </li>
@@ -18,7 +19,7 @@
     props:{
       title:{
         type:String,
-        default:'排行',
+        default:'',
         required:true,
       },
       fontColor:{
@@ -134,8 +135,10 @@
   display: flex;
 }
 .head_btn:first-child .icon.back{
-  background-image: url('./../../../assets/images/icon/1.png');
-  background-position: -20px -125px;
+  background-image: url('./../../../assets/images/icon/left.png');
+  background-position: center;
+  background-size:0.45rem;
+  background-repeat: no-repeat;
   width:0.6rem;
   height:0.6rem;
 }
@@ -143,7 +146,7 @@
   background-image: url('./../../../assets/images/icon/more.png');
   background-repeat: no-repeat;
   background-position: 0;
-  background-size: 0.6rem;
+  background-size: 0.45rem;
   width:0.6rem;
   height:0.6rem;
 }

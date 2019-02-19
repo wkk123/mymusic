@@ -103,6 +103,9 @@ export default {
             console.log(this.lyric);
             if(this.song.id === 'undefined'){
               console.log('song1',this.$store.state.song);
+              // http://dl.stream.qqmusic.qq.com/C400003OZZ2d04feWt.m4a?guid=2617295690&vkey=744CA5469390B02A09F43D7D95D058879258825D4B9E64F60753C8E13AB761B528964F3A96424A518C6DB52750D2F8812B48E5A8D061C367&uin=0&fromtag=66
+              // http://dl.stream.qqmusic.qq.com/C400002dvcvw39LJpa.m4a?guid=2617295690&vkey=16E554376C7E2FB7F71C4630403EB2BBC713B0720EE2357AC85C88F74B4CF232557E0849F72CCDC19A5A01EC9AACE73A1CF8605CCD76DBC6&uin=0&fromtag=66
+              // http://isure.stream.qqmusic.qq.com/C400003OZZ2d04feWt.m4a?guid=2617295690&vkey=81EA0E09E00143B3E9858C8CCBC67E42B5862730BA065E28BEA0ECCBD439C7A566BCB7031D80451C3E4C3D6803674D5991E693546CB6A5A1&uin=0&fromtag=66
               return  this.AudioUrl ='http://ws.stream.qqmusic.qq.com/C400'+this.$store.state.song.data.songid+'.m4a?fromtag=66&guid=9515452293';
             }else{
               console.log('song2',this.$store.state.song)
